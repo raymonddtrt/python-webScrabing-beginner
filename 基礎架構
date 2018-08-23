@@ -1,0 +1,7 @@
+import requests
+
+myURL="URL"
+headers={'Content-type': 'application/json','Authorization':''}
+payload = {"question": "多少費用"}
+res=requests.post(url=myURL, headers=headers, json=payload)
+print(res.text)
